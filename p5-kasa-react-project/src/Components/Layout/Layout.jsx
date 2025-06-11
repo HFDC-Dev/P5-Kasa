@@ -1,12 +1,14 @@
 import { Outlet, NavLink } from "react-router-dom"
-import logo from "../assets/LOGO.png"
-import "../Pages/layout.scss"
+import logo from "../../assets/LOGO.png"
+import FooterLogo from "../../assets/LogoFooter.png"
+import "./layout.scss"
 function Layout() {
 
     return (
         <div className="layout">
             <header>
-                <nav className="nav">
+                <div className="container">
+                    <nav className="nav">
                     <img src={logo} alt="Logo de Kasa" className="logo" />
                     <div className="nav-links">
                         <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
@@ -17,14 +19,22 @@ function Layout() {
                         </NavLink>
                     </div>
                 </nav>
+                </div>
             </header>
 
             <main>
-                <Outlet />
+                <div className="container">
+                    <Outlet />
+                </div>
             </main>
 
             <footer>
-                <p> 2025 Kasa. Tous droits réservés</p>
+                <div className="footer-container">
+                    <div className="footer-content">
+                        <img src={FooterLogo} alt="Logo du footer" className="footer-logo"/>
+                        <p> 2020 Kasa. All rights reserved</p>
+                    </div>
+                </div>
             </footer>
         </div>
     )
