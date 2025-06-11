@@ -1,0 +1,50 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    header {
+        background-color: white;
+        padding: 20px 40px;
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            height: 45px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                border-bottom: 2px solid transparent;
+
+                &.active {
+                    border-bottom-color: black;
+                }
+            }
+        }
+    }
+
+    main {
+        flex: 1;
+        padding: 40px 20px;
+        background-color: white;
+    }
+
+    footer {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 14px;
+    }
+}

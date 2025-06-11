@@ -1,14 +1,10 @@
-// import { useState } from 'react'
+import Routes from './Router';
 import './App.css'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
-  return (
-    <div>
-      <p>Salut</p>
-    </div>
-  )
+  return <Routes />
+   
 }
 
 export default App
