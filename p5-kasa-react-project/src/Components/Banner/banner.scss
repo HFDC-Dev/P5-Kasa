@@ -1,0 +1,28 @@
+.banner {
+  position: relative;
+  height: 223px;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.486);
+    z-index: 1;
+  }
+
+  .banner-text {
+    color: white;
+    font-size: 50px;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+  }
+}

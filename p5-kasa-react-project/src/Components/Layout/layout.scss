@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .layout {
     display: flex;
     flex-direction: column;
@@ -10,7 +5,7 @@
 
     header {
         background-color: white;
-        padding: 20px 40px;
+        padding: 25px 40px;
 
         .nav {
             display: flex;
@@ -31,6 +26,7 @@
                 text-decoration: none;
                 color: black;
                 border-bottom: 2px solid transparent;
+                font-size: 18px;
 
                 &.active {
                     border-bottom-color: black;
@@ -41,7 +37,7 @@
 
     main {
         flex: 1;
-        padding: 40px 20px;
+        padding: 5px px;
         background-color: white;
     }
 
@@ -58,14 +54,24 @@
             padding: 0 40px;
         }
 
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .footer-logo {
             height: 30px;
+            margin-bottom: 15px;
+        }
     }
+
+    .container {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 }
 
-.container {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+
+
