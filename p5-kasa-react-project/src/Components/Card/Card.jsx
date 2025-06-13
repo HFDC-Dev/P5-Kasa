@@ -5,7 +5,9 @@ function Card({ title, image }) {
        <div className="card-container">
             <div className="card">
                 <img src={image} alt={title} className="card-image" />
-                <h3>{title}</h3>
+                <div className="card-overlay">
+                    <h3 className="card-title">{title}</h3>
+                </div>
             </div>
        </div>
     )
