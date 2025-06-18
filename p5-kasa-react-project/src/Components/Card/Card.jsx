@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import "./card.scss"
 
-function Card({ title, image }) {
+function Card({ id, title, image }) {
     return (
-       <div className="card-container">
+        <Link to={`/logement/${id}`} className="card-link">
+        <div className="card-container">
             <div className="card">
                 <img src={image} alt={title} className="card-image" />
                 <div className="card-overlay">
@@ -10,6 +12,7 @@ function Card({ title, image }) {
                 </div>
             </div>
        </div>
+        </Link>
     )
 }
 
