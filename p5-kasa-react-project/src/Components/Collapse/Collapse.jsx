@@ -9,18 +9,18 @@ function Collapse({ title, content }) {
 
   return (
     <div className="collapse">
-      <div
-        className={`collapse-header ${isOpen ? "open" : ""}`}
-      >
+      <div className={`collapse-header ${isOpen ? "open" : ""}`}>
         <span>{title}</span>
-        <span className={`arrow ${isOpen ? "rotate" : ""}`}onClick={toggleCollapse}>
+        <span className={`arrow ${isOpen ? "rotate" : ""}`} onClick={toggleCollapse}>
           <IoIosArrowUp size={30} />
         </span>
       </div>
 
-      <div className={`collapse-content ${isOpen ? "open" : ""}`}>
-        <p>{content}</p>
-      </div>
+      {isOpen && (
+        <div className="collapse-content open">
+          {typeof content === "string" ? <p>{content}</p> : content}
+        </div>
+      )}
     </div>
   );
 }
