@@ -24,3 +24,19 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .error {
+        h1 {
+            font-size: 6rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        a {
+            font-size: 1rem;
+        }
+    }
+}

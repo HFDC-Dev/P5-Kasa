@@ -7,7 +7,7 @@ import "./home.scss";
 function Home() {
     return (
         <main className="home">
-            <Banner image={bannerImage} text="Chez vous, partout et ailleurs" />
+            <Banner image={bannerImage} text={<>Chez vous,<br className="mobile-break"></br> partout et ailleurs</>} />
              <section className="cards-container">
                 {logements.map((logement) => (
                     <Card 

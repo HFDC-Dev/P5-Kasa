@@ -73,5 +73,32 @@
     }
 }
 
+@media (max-width: 768px) {
+  .layout {
+    header {
+      padding: 25px 0;
+
+      .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        height: 45px;
+        width: auto;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
 
 

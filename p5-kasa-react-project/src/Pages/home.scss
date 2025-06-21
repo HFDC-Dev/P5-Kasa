@@ -7,4 +7,20 @@
   padding: 50px;
   background-color: #f6f6f6;
   border-radius: 20px;
+  margin-bottom: 40px;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    background-color: white;
+    padding: 0;
 }
+}
+
+.mobile-break {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: inline;
+  }
+}
+

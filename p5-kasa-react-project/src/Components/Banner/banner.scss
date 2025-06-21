@@ -26,3 +26,17 @@
     padding: 0 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .banner {
+    height: 130px;
+    border-radius: 15px;
+
+    .banner-text {
+      font-size: 20px;
+      text-align: start;
+      margin-right: 180px;
+    }
+  }
+  
+}
