@@ -6,18 +6,18 @@ import Collapse from "../Components/Collapse/Collapse";
 import "./logement.scss"
 
 function Logement() {
-  const { id } = useParams();
-  const navigate = useNavigate();
+  const { id } = useParams(); // On récupère l’id du logement depuis l’URL
+  const navigate = useNavigate(); // Permet de rediriger l’utilisateur
 
-  const logement = logements.find((item) => item.id === id);
+  const logement = logements.find((item) => item.id === id); // On cherche le logement qui a l’id récupéré
 
  useEffect(() => {
     if (!logement) {
-      navigate("/notfound");
+      navigate("/notfound"); // Si on trouve pas de logement on est redirigé vers la page d'erreur
     }
   }, [logement, navigate]);
 
-  if (!logement) return null;
+  if (!logement) return null; // Si toujours rien trouvé, on affiche rien (Pour éviter que le site crash)
 
   return (
         <div className="logement">

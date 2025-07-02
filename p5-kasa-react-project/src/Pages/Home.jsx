@@ -9,7 +9,7 @@ function Home() {
         <main className="home">
             <Banner image={bannerImage} text={<>Chez vous,<br className="mobile-break"></br> partout et ailleurs</>} />
              <section className="cards-container">
-                {logements.map((logement) => (
+                {logements.map((logement) => ( // On boucle sur chaque logement
                     <Card 
                         key={logement.id}
                         id={logement.id}

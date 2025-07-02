@@ -7,7 +7,7 @@ function NotFound() {
     <div className="error">
       <h1>404</h1>
       <p>Oups ! La page que vous cherchez n’existe pas.</p>
-      <Link to="/">Retourner sur la page d’accueil</Link>
+      <Link to="/">Retourner sur la page d’accueil</Link> {/* Lien qui ramène l’utilisateur à la page d’accueil */}
     </div>
   );
 }

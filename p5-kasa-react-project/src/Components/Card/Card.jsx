@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import "./card.scss"
 
 function Card({ id, title, image }) {
-    return (
-        <Link to={`/logement/${id}`} className="card-link">
+    return ( // On entoure toute la carte avec un lien. Quand on clique dessus, on va sur la page du logement
+        <Link to={`/logement/${id}`} className="card-link"> 
         <div className="card-container">
             <div className="card">
                 <img src={image} alt={title} className="card-image" />

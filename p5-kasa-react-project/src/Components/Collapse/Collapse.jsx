@@ -3,9 +3,9 @@ import "./collapse.scss";
 import { IoIosArrowUp } from "react-icons/io";
 
 function Collapse({ title, content }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); // Par défaut c'est fermé
 
-  const toggleCollapse = () => setIsOpen(!isOpen);
+  const toggleCollapse = () => setIsOpen(!isOpen); // Quand on clique, on inverse l'état ouvert-fermé
 
   return (
     <div className="collapse">
@@ -16,7 +16,7 @@ function Collapse({ title, content }) {
         </span>
       </div>
 
-      {isOpen && (
+      {isOpen && ( // Si c'est ouvert, on montre le contenu
         <div className="collapse-content open">
           {typeof content === "string" ? <p>{content}</p> : content}
         </div>

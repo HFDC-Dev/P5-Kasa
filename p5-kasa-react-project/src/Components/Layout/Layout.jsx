@@ -11,7 +11,7 @@ function Layout() {
                     <nav className="nav">
                     <img src={logo} alt="Logo de Kasa" className="logo" />
                     <div className="nav-links">
-                        <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>
+                        <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>     {/* Classe active si la route correspond */}
                             Accueil
                         </NavLink>
                         <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>
