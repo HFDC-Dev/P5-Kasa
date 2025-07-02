@@ -32,7 +32,7 @@ function Layout() {
                 <div className="footer-container">
                     <div className="footer-content">
                         <img src={FooterLogo} alt="Logo du footer" className="footer-logo"/>
-                        <p> 2020 Kasa. All rights reserved</p>
+                        <p> © 2020 Kasa. All rights reserved</p>
                     </div>
                 </div>
             </footer>

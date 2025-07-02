@@ -1,8 +1,14 @@
 .about {
-
+  
   .about-collapses {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 70px;
+    gap: 5px;
+    
+
+      @media (max-width: 768px) {
+        margin-top: -20px;
+      }
   }
 }
