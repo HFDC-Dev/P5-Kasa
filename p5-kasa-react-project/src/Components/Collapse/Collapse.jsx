@@ -16,11 +16,9 @@ function Collapse({ title, content }) {
         </span>
       </div>
 
-      {isOpen && ( // Si c'est ouvert, on montre le contenu
-        <div className="collapse-content open">
-          {typeof content === "string" ? <p>{content}</p> : content}
-        </div>
-      )}
+     <div className={`collapse-content ${isOpen ? "open" : ""}`}>
+        {typeof content === "string" ? <p>{content}</p> : content}
+      </div>
     </div>
   );
 }
